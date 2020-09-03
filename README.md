@@ -30,3 +30,29 @@ php artisan serve
 ```
 
 and run the [http://localhost:8000](http://localhost:8000) to run the app
+
+you can customize this following file for customize the language or anything that you wanna do
+```
+app
+│
+├── Http
+│   ├── Controllers
+│   │   ├── MyControllers.php       # [Controller]
+├── Item.php                        # [Model]
+├── Language.php                    # [Model]
+├── User.php                        # [Model]
+├── Word.php                        # [Model]
+database
+├── migrations
+│   ├── 2020_09_02_083208_create_languages_table.php
+│   ├── 2020_09_02_083243_create_items_table.php
+│   ├── 2020_09_02_085308_create_words_table.php
+resources
+├── views
+│   ├── addword.blade.php
+│   ├── welcome.blade.php
+routes
+├── web.php
+.env
+
+```

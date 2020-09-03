@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return "hello world";
-});
-Route::get('/check','MyController@check');
+Route::get('/','MyController@check');
+Route::get('/addword','MyController@addword')->name('addword');
+Route::post('/pushword','MyController@pushword')->name('pushword');
